@@ -1,14 +1,16 @@
-package com.daffatahta.uts;
+package com.daffatahta.utsmobile2019.activites;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class MainActivity extends AppCompatActivity {
+import com.daffatahta.utsmobile2019.R;
+
+public class TimerActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_timer);
     }
 }
