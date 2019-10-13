@@ -8,8 +8,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-import com.daffatahta.utsmobile2019.Fragment.FragmentCurrencyConverter;
-import com.daffatahta.utsmobile2019.Fragment.FragmentTemperature;
 import com.daffatahta.utsmobile2019.R;
 
 public class Converter extends AppCompatActivity {
@@ -21,27 +19,13 @@ public class Converter extends AppCompatActivity {
     }
 
     public void handleCurrencyConverter(View view) {
-        final Button btn;
-        btn = findViewById(R.id.buttonCurrency);
-        btn.setVisibility(View.INVISIBLE);
-
-        final FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
-        ft.replace(R.id.currencyConversionPlaceholder, new FragmentCurrencyConverter());
-        ft.commit();
+        Intent i = new Intent(this, CurrencyConverterActivity.class);
+        startActivity(i);
 
     }
 
     public void handleTemperatureConversion(View view) {
-        //Intent i = new Intent(this, FragmentTemperature.class);
-        //startActivity(i);
-        final Button btn;
-        btn = findViewById(R.id.buttonTemperature);
-        //hide button
-        btn.setVisibility(View.INVISIBLE);
-        //call fragment
-        final FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
-        ft.replace(R.id.fragmentTemperaturePlaceHolder, new FragmentTemperature());
-        ft.commit();
-
+        Intent i = new Intent(this, TemperatureConverterActivity.class);
+        startActivity(i);
     }
 }
