@@ -1,4 +1,4 @@
-package com.daffatahta.utsmobile2019;
+package com.daffatahta.uts;
 
 import org.junit.Test;
 

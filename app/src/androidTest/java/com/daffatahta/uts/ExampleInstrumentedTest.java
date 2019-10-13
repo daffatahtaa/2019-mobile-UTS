@@ -1,4 +1,4 @@
-package com.daffatahta.utsmobile2019;
+package com.daffatahta.uts;
 
 import android.content.Context;
 
@@ -22,6 +22,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getInstrumentation().getTargetContext();
 
-        assertEquals("com.daffatahta.utsmobile2019", appContext.getPackageName());
+        assertEquals("com.daffatahta.uts", appContext.getPackageName());
     }
 }
