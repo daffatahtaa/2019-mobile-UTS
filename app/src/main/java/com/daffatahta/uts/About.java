@@ -15,7 +15,7 @@ public class About extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_about);
     }
-    public void instagram(View view){
+    public void ig (View view){
         String url = "http://instagram.com/dappssx";
         Uri uri = Uri.parse(url);
         Intent launchBrowser = new Intent(Intent.ACTION_VIEW, uri);
@@ -23,10 +23,12 @@ public class About extends AppCompatActivity {
     }
 
     public void openBehanche(View view) {
-
+        Intent i = new Intent(this, Uri.class);
+        startActivity(i);
     }
 
     public void openInstagram(View view) {
 
     }
+
 }
